@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoverItNow - Insurance Solutions</title>
+    <meta
+      name="description"
+      content="Comprehensive insurance coverage for auto, home, life, and business. Get your free quote today!"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="brand">
+              <svg
+                class="shield-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <span class="brand-name">CoverItNow</span>
+            </div>
+            <h1>Protect What <span class="text-accent">Matters Most</span></h1>
+            <p class="hero-description">
+              Comprehensive insurance coverage tailored to your needs. Get peace
+              of mind with our trusted protection plans and exceptional customer
+              service.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <span>234-3941-6972</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>support@coveritnow.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-form-card">
+            <h3>Get Your Free Quote</h3>
+            <form id="quoteForm" class="quote-form">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+              <select name="coverage" required>
+                <option value="auto">Auto Insurance</option>
+                <option value="home">Home Insurance</option>
+                <option value="life">Life Insurance</option>
+                <option value="health">Health Insurance</option>
+                <option value="business">Business Insurance</option>
+              </select>
+              <button type="submit" class="btn btn-primary btn-full">
+                Get My Free Quote
+              </button>
+            </form>
+            <p class="form-disclaimer">
+              No obligation. Secure and confidential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Types Section -->
+    <section class="coverage-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Coverage That Fits Your Life</h2>
+          <p>
+            Choose from our comprehensive range of insurance products designed
+            to protect what matters most to you and your family.
+          </p>
+        </div>
+
+        <div class="coverage-grid">
+          <div class="coverage-card">
+            <div class="card-header">
+              <div class="icon-circle">
+                <svg
+                  class="coverage-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Auto Insurance</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Comprehensive coverage for your vehicle with competitive rates
+                and 24/7 roadside assistance.
+              </p>
+              <ul class="feature-list">
+                <li>Collision Coverage</li>
+                <li>Comprehensive Coverage</li>
+                <li>Liability Protection</li>
+                <li>Roadside Assistance</li>
+              </ul>
+              <div class="card-footer">
+                <p class="price">Starting at $89/month</p>
+                <button class="btn btn-primary btn-full">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="coverage-card">
+            <div class="card-header">
+              <div class="icon-circle">
+                <svg
+                  class="coverage-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7z"
+                  />
+                </svg>
+              </div>
+              <h3>Home Insurance</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Protect your home and belongings with our comprehensive
+                homeowners insurance policies.
+              </p>
+              <ul class="feature-list">
+                <li>Property Protection</li>
+                <li>Personal Belongings</li>
+                <li>Liability Coverage</li>
+                <li>Additional Living Expenses</li>
+              </ul>
+              <div class="card-footer">
+                <p class="price">Starting at $125/month</p>
+                <button class="btn btn-primary btn-full">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="coverage-card">
+            <div class="card-header">
+              <div class="icon-circle">
+                <svg
+                  class="coverage-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3>Life Insurance</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Secure your family's financial future with our flexible life
+                insurance options.
+              </p>
+              <ul class="feature-list">
+                <li>Term Life Insurance</li>
+                <li>Whole Life Insurance</li>
+                <li>Flexible Premiums</li>
+                <li>Cash Value Building</li>
+              </ul>
+              <div class="card-footer">
+                <p class="price">Starting at $45/month</p>
+                <button class="btn btn-primary btn-full">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="coverage-card">
+            <div class="card-header">
+              <div class="icon-circle">
+                <svg
+                  class="coverage-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <h3>Business Insurance</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                Comprehensive business protection including general liability,
+                property, and workers compensation.
+              </p>
+              <ul class="feature-list">
+                <li>General Liability</li>
+                <li>Property Insurance</li>
+                <li>Workers Compensation</li>
+                <li>Business Interruption</li>
+              </ul>
+              <div class="card-footer">
+                <p class="price">Custom Quotes Available</p>
+                <button class="btn btn-primary btn-full">Get Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>
+            Don't just take our word for it. Here's what real customers have to
+            say about their experience with CoverItNow.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "CoverItNow made the insurance process so easy! When I had a claim
+              after a minor fender bender, they handled everything quickly and
+              professionally. Highly recommend!"
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Sarah Johnson</p>
+              <p class="author-location">Austin, TX</p>
+              <span class="coverage-badge">Auto Insurance</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "After shopping around for months, CoverItNow offered the best
+              rates for comprehensive home insurance. Their customer service is
+              outstanding."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Michael Chen</p>
+              <p class="author-location">Seattle, WA</p>
+              <span class="coverage-badge">Home Insurance</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "As a small business owner, finding affordable business insurance
+              was crucial. CoverItNow provided exactly what I needed at a price
+              I could afford."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">Emily Rodriguez</p>
+              <p class="author-location">Miami, FL</p>
+              <span class="coverage-badge">Business Insurance</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The peace of mind that comes with their life insurance policy is
+              invaluable. The application process was straightforward and the
+              premiums are very reasonable."
+            </p>
+            <div class="testimonial-author">
+              <p class="author-name">David Thompson</p>
+              <p class="author-location">Denver, CO</p>
+              <span class="coverage-badge">Life Insurance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <p class="stat-number">500K+</p>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">4.9★</p>
+            <p class="stat-label">Average Rating</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">24/7</p>
+            <p class="stat-label">Customer Support</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">50+</p>
+            <p class="stat-label">States Covered</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="brand">
+              <svg
+                class="shield-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <span class="brand-name">CoverItNow</span>
+            </div>
+            <p class="footer-description">
+              Protecting what matters most to you and your family for over 25
+              years. Your trusted insurance partner for life.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Insurance Products</h4>
+            <ul class="footer-links">
+              <li><a href="#">Auto Insurance</a></li>
+              <li><a href="#">Home Insurance</a></li>
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">Business Insurance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Customer Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">File a Claim</a></li>
+              <li><a href="#">Payment Center</a></li>
+              <li><a href="#">Policy Management</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact Info</h4>
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <span>1-800-COVER-NOW</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>support@coveritnow.com</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>123 Insurance Way<br />New York, NY 10001</span>
+              </div>
+            </div>
+            <div class="business-hours">
+              <p class="hours-title">Business Hours:</p>
+              <p>Mon-Fri: 8AM-8PM EST</p>
+              <p>Sat-Sun: 9AM-5PM EST</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 CoverItNow Insurance. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

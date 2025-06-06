@@ -1,0 +1,160 @@
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-legal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .coverage-section,
+  .testimonials-section {
+    padding: 60px 0;
+  }
+
+  .quote-form-card {
+    padding: 24px;
+  }
+
+  .coverage-card {
+    padding: 24px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content {
+    gap: 40px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Screen Optimizations */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .hero-content {
+    gap: 80px;
+  }
+}
+
+/* Animation Utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.fade-in-up-delay {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+/* Focus and Accessibility */
+.btn:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .hero,
+  .footer {
+    display: none;
+  }
+
+  .coverage-section,
+  .testimonials-section {
+    padding: 20px 0;
+  }
+
+  .coverage-card,
+  .testimonial-card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}
